@@ -17,7 +17,7 @@
         <%  } else {
           for(var i = 0 ; i < cityList.length ; i++){ %>
 
-        <!-- Début de la boucle -->
+       
         
         <div>
           <ul class="list-group" data-lng=" <%= cityList[i].lng %>" data-lat=" <%= cityList[i].lat %>" data-name="<%=cityList[i].name%>">
@@ -27,13 +27,13 @@
               <span class="desc col-2"><%=cityList[i].desc%></span> 
               <span class="badge badge-warning col-1" ><%=cityList[i].temp_min%>°C</span>
               <span class="badge badge-secondary col-1" ><%=cityList[i].temp_max%>°C</span>
-              <!-- Delete -->
+             
               <a href="/delete-city?id=<%=cityList[i]._id%>" class="col-1"> <img src="/images/cancel.svg" width="auto" height="20" alt=""></a>
             </ul>
         </div>
           <%  } %>
           <% } %>
-        <!-- Fin de la boucle -->
+       
       </div>
 
     </div>
